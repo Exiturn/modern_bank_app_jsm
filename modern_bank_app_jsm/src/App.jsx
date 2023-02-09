@@ -6,7 +6,7 @@ Clients, CTA, Footer } from './components'
 
 const App = () => {
   return (
-    <div className='bg-primary w-full overflow-x-hidden'>
+    <div className='bg-primary w-full overflow-x-hidden sm:px-6'>
       
       {/* Navbar */}
       <div className={`${style.paddingX} ${style.flexCenter}`}>
