@@ -32,15 +32,19 @@ const Business = () => {
 
       {/* Right Column */}
       <div className={`flex flex-1 flex-col ${style.flexCenter}`}>
-        {features.map((feature) => (
-          <div key={feature.id} className='flex max-w-[470px] max-h-[115px]'>
-            <div className={`${style.flexCenter} min-w-[15%] relative`}>
-              <div className=''/>
-              <img src={feature.icon} alt="rewards" />
+        {features.map((feature, index) => (
+          <div key={feature.id} className={`flex max-w-[470px] max-h-[115px] py-6 px-4 flex-1
+          ${index === 1 && 'my-10'}
+          ${index === 1 && 'rounded-[16px] bg-black-gradient-2'}`}>
+            <div className={`${style.flexCenter} min-w-[15%] relative flex-1`}>
+              <div className='rounded-full bg-black-gradient absolute place-self-center w-[64px]
+              h-[64px]'/>
+              <img src={feature.icon} alt="rewards" 
+              className='z-[1]'/>
             </div>
             <div className='ml-5'>
-              <h1>{feature.title}</h1>
-              <p className={`${style.paragraph}`}>{feature.content}</p>
+              <h1 className='font-poppins text-[17px] font-medium'>{feature.title}</h1>
+              <p className={`${style.paragraph} text-[15px] leading-[22px]`}>{feature.content}</p>
             </div>
           </div>
         ))}
