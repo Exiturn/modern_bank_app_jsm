@@ -7,6 +7,8 @@ module.exports = {
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
+        footer: "#0b0a0c99",
+        footer1: '#ffffff',
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
